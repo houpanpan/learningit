@@ -9,8 +9,9 @@
 **github项目地址：**
 
 **模型下载地址：**    
-**[tensorflow版](http://shangjian-ml-k8s.oss-cn-beijing.aliyuncs.com/open_source/FinBERT_L-12_H-768_A-12_tf.zip?OSSAccessKeyId=LTAI7gXQWTqhrmtu&Expires=1603713185&Signature=N71M%2Bqrf2UxdV9d1Khc5fAgPduU%3D)**      
-**[pytorch版](http://shangjian-ml-k8s.oss-cn-beijing.aliyuncs.com/open_source/FinBERT_L-12_H-768_A-12_pytorch.zip?OSSAccessKeyId=LTAI7gXQWTqhrmtu&Expires=1606953145&Signature=IL9mD9DawwrxX5aaeMDqal9fxIk%3D)**
+**[tensorflow版]()**      
+
+**[pytorch版]()**
 
 
 

@@ -11,7 +11,7 @@
 **模型下载地址：**    
 
 **[tensorflow版（密码：714y）](百度云链接：https://pan.baidu.com/s/16tDXNU4z9UXK-ELK72Jv3w)**
-      
+
 **[pytorch版（密码：cckk）](https://pan.baidu.com/s/1jjMRvkam3efyDfY6mb5MCA)**
 
 **使用方式：** 使用方法很简单，google发布的bert模型怎么用这个怎么用，只需要将模型下载后，更改下模型的读取路径即可.

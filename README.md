@@ -92,7 +92,7 @@ XLA 全称为加速线性运算，如果在 Tensorflow 中开启了 XLA，那么
 
 该任务的数据集共包含 3000 条样本，其中训练集数据约 1100 条，测试集数据约 1900条，各类别分布情况如下：
 
-![image](file:///home/houpan/learngit/FinBERT_pics/classification_data.png)
+![image](https://github.com/houpanpan/learningit/blob/master/FinBERT_pics/classification_data.png)
 
 ### 3.1.3. 实验结果
 TASK\MODEL     | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT 
@@ -109,7 +109,7 @@ TASK\MODEL     | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT
 该任务的数据集共包含 1200 条样本，其中训练集数据约 400 条，测试集数据约 800条。训练集中的各类别数目在 5~15 条之间，属于典型的小样本任务。
 各类别分布情况如下：
 
-![image](file:///home/houpan/FinBERT_pics/report_data.png)
+![image](https://github.com/houpanpan/learningit/blob/master/FinBERT_pics/report_data.png)
 
 
 ### 3.2.3. 实验结果
@@ -128,7 +128,7 @@ TASK\MODEL      | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT
 ### 3.3.2. 数据集
 该任务的数据集共包含 2000 条样本，其中训练集数据约 1300 条，测试集数据约 700条，各类别分布情况如下：
 
-![image](file:///home/houpan/FinBERT_pics/sentiment_data.png)
+![image](https://github.com/houpanpan/learningit/blob/master/FinBERT_pics/sentiment_data.png)
 
 ### 3.3.3. 实验结果
 
@@ -154,7 +154,7 @@ TASK\MODEL      | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT
 
 ## 3.5. 总结
 
-在本次基线测试中，我们以金融场景中所遇到的四类实际业务问题和数据入手进行对比实验，包括金融类短讯类型分类任务、金融文本行业分类、金融情绪分析任务以及金融类实体识别任务。对比 FinBERT 和 Google 原生中文BERT、 BERT-wwm、RoBERTa-wwm-ext 这三种通用领域的预训练模型
+在本次基线测试中，我们以金融场景中所遇到四类实际业务问题和数据入手进行对比实验，包括金融类短讯类型分类任务、金融文本行业分类、金融情绪分析任务以及金融类实体识别任务。对比 FinBERT 和 Google 原生中文BERT、 BERT-wwm、RoBERTa-wwm-ext 这三种通用领域的预训练模型
 
 可知，**FinBERT** 效果提升显著，在 F1-score 上平均可以提升 **2~5.7** 个百分点。
 # 4. 结语

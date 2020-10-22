@@ -6,9 +6,14 @@
 
 但是，当前开源的各类中文领域的深度预训练模型，多是面向通用领域的应用需求，在包括金融在内的多个垂直领域均没有看到相关开源模型。熵简科技希望通过本次开源，推动 NLP技术在金融领域的应用发展，欢迎学术界和工业界各位同仁下载使用，我们也将在时机合适的时候推出性能更好的 FinBERT 2.0 & 3.0。
 
-github项目地址：
+**github项目地址：**
 
-**模型下载地址：**    **tensorflow版**         **pytorch版**
+**模型下载地址：**    
+**[tensorflow版](http://shangjian-ml-k8s.oss-cn-beijing.aliyuncs.com/open_source/FinBERT_L-12_H-768_A-12_tf.zip?OSSAccessKeyId=LTAI7gXQWTqhrmtu&Expires=1603713185&Signature=N71M%2Bqrf2UxdV9d1Khc5fAgPduU%3D)**      
+**[pytorch版](http://shangjian-ml-k8s.oss-cn-beijing.aliyuncs.com/open_source/FinBERT_L-12_H-768_A-12_pytorch.zip?OSSAccessKeyId=LTAI7gXQWTqhrmtu&Expires=1606953145&Signature=IL9mD9DawwrxX5aaeMDqal9fxIk%3D)**
+
+
+
 
 **使用方式：** 使用方法很简单，google发布的bert模型怎么用这个怎么用，只需要将模型下载后，更改下模型的读取路径即可。
 # 2. 模型及预训练方式
@@ -163,6 +168,8 @@ TASK\MODEL      | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT
 
 任何问题，欢迎与团队负责人联系，邮箱：liyu@entropyreduce.com
 
+
+
 # 5. 参考文献
 
     [1]Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. (2018). https://doi.org/arXiv:1811.03600v2 arXiv:1810.04805
@@ -174,3 +181,10 @@ TASK\MODEL      | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT
     [7]Micikevicius, Paulius, et al. “Mixed precision training.” arXiv preprint arXiv:1710.03740 (2017).
     [8]https://github.com/ymcui/Chinese-BERT-wwm/
     [9]https://github.com/huggingface/transformers
+
+                
+    
+
+
+
+

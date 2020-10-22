@@ -9,14 +9,22 @@
 **github项目地址：**
 
 **模型下载地址：**    
-**[tensorflow版]()**      
+**[tensorflow版]  百度云链接：https://pan.baidu.com/s/16tDXNU4z9UXK-ELK72Jv3w 密码：714y**      
 
-**[pytorch版]()**
-
-
+**[pytorch版]   百度云链接: https://pan.baidu.com/s/1jjMRvkam3efyDfY6mb5MCA  密码: cckk**
 
 
-**使用方式：** 使用方法很简单，google发布的bert模型怎么用这个怎么用，只需要将模型下载后，更改下模型的读取路径即可。
+
+
+**使用方式：** 使用方法很简单，google发布的bert模型怎么用这个怎么用，只需要将模型下载后，更改下模型的读取路径即可.
+
+**[tensorflow版本参考这里](https://github.com/google-research/bert)**
+
+**[pytorch版本参考这里](https://github.com/huggingface/transformers)**
+
+**注：** 我们的pytorch模型是通过训练好的tensorflow模型转换而来，具体转换代码可以 
+**[参考这里](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_bert_original_tf_checkpoint_to_pytorch.py)**
+
 # 2. 模型及预训练方式
 ## 2.1. 网络结构
 

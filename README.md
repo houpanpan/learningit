@@ -10,15 +10,15 @@
 
 **模型下载地址：**    
 
-**[tensorflow版（密码：714y）](百度云链接：https://pan.baidu.com/s/16tDXNU4z9UXK-ELK72Jv3w)**
+- **[tensorflow版（密码：714y）](百度云链接：https://pan.baidu.com/s/16tDXNU4z9UXK-ELK72Jv3w)**
 
-**[pytorch版（密码：cckk）](https://pan.baidu.com/s/1jjMRvkam3efyDfY6mb5MCA)**
+- **[pytorch版（密码：cckk）](https://pan.baidu.com/s/1jjMRvkam3efyDfY6mb5MCA)**
 
 **使用方式：** 使用方法很简单，google发布的bert模型怎么用这个怎么用，只需要将模型下载后，更改下模型的读取路径即可.
 
-**[tensorflow版本参考这里](https://github.com/google-research/bert)**
+- **[tensorflow版本参考这里](https://github.com/google-research/bert)**
 
-**[pytorch版本参考这里](https://github.com/huggingface/transformers)**
+- **[pytorch版本参考这里](https://github.com/huggingface/transformers)**
 
 **注：** 我们的pytorch模型是通过训练好的tensorflow模型转换而来，具体转换代码可以 
 **[参考这里](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_bert_original_tf_checkpoint_to_pytorch.py)**

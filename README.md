@@ -10,7 +10,7 @@
 
 **模型下载地址：**    
 
-- **[tensorflow版（密码：714y）](百度云链接：https://pan.baidu.com/s/16tDXNU4z9UXK-ELK72Jv3w)**
+- **[tensorflow版（密码：714y）](https://pan.baidu.com/s/16tDXNU4z9UXK-ELK72Jv3w)**
 
 - **[pytorch版（密码：cckk）](https://pan.baidu.com/s/1jjMRvkam3efyDfY6mb5MCA)**
 

@@ -1,31 +1,24 @@
 # 1. 背景及下载地址
 
-为了促进自然语言处理技术在金融科技领域的应用和发展，熵简科技 AI Lab 近期开源了基于 BERT 架构的金融领域预训练语言模型 FinBERT 1.0。据我们所知，这是国内首个在金融领域大规模语料上训练的开源中文BERT预训练模型。相对于Google发布的原生中文BERT、哈工大讯飞实验室开源的BERT-wwm 以及 RoBERTa-wwm-ext 等模型，本次开源的 **FinBERT 1.0** 预训练模型在多个金融领域的下游任务中获得了显著的性能提升，在不加任何额外调整的情况下，**F1-score** 直接提升至少 **2~5.7** 个百分点。
+促进自然语言处理技术在金融科技领域的应用和发展，熵简科技 AI Lab 近期开源了基于 BERT 架构的金融领域预训练语言模型 FinBERT 1.0。据我们所知，这是国内首个在金融领域大规模语料上训练的开源中文BERT预训练模型。相对于Google发布的原生中文BERT、哈工大讯飞实验室开源的BERT-wwm 以及 RoBERTa-wwm-ext 等模型，本次开源的 **FinBERT 1.0** 预训练模型在多个金融领域的下游任务中获得了显著的性能提升，在不加任何额外调整的情况下，**F1-score** 直接提升至少 **2~5.7** 个百分点。
 
 对于深度学习时代的自然语言处理技术，我们一般认为存在两大里程碑式的工作。第一个里程碑是在2013年逐渐兴起，以 Word2Vec 为代表的的词向量技术；第二个里程碑则是在 2018 年以 BERT 为代表的深度预训练语言模型（Pre-trained Language Models）。一方面，以 BERT 为代表的深度预训练模型在包括文本分类、命名实体识别、问答等几乎所有的子领域达到了新的 state of the art；另一方面，作为通用的预训练模型，BERT 的出现也显著地减轻了NLP算法工程师在具体应用中的繁重工作，由以往的魔改网络转变为 Fine tune BERT，即可快速获得性能优秀的基线模型。因此，深度预训练模型已成为各个 AI 团队必备的基础技术。
 
 但是，当前开源的各类中文领域的深度预训练模型，多是面向通用领域的应用需求，在包括金融在内的多个垂直领域均没有看到相关开源模型。熵简科技希望通过本次开源，推动 NLP技术在金融领域的应用发展，欢迎学术界和工业界各位同仁下载使用，我们也将在时机合适的时候推出性能更好的 FinBERT 2.0 & 3.0。
 
-**github项目地址：**
-
 **模型下载地址：**    
 
-- **[tensorflow版下载（百度云密码：714y）](https://pan.baidu.com/s/16tDXNU4z9UXK-ELK72Jv3w)**
+- **[TensorFlow版](https://pan.baidu.com/s/16tDXNU4z9UXK-ELK72Jv3w)** （密码：714y）
 
-- **[pytorch版下载（百度云密码：cckk）](https://pan.baidu.com/s/1jjMRvkam3efyDfY6mb5MCA)**
+- **[PyTorch版](https://pan.baidu.com/s/1jjMRvkam3efyDfY6mb5MCA)** （密码：cckk）
 
-- **[tensorflow版下载（Google Drive）](https://drive.google.com/file/d/1VGGr4z1cK3Xeczka7UWzrtbc_RCUiwET/view?usp=sharing)**
+**使用方式：** 与 Google 发布的原生 BERT 使用方式一致，直接替换相应路径即可。不同深度学习框架的使用方式可参考如下项目：
 
-- **[pytorch版下载（Google Drive）](https://drive.google.com/file/d/1hJQ2_bJWoGwOwSUDxK4dCalwkqN_qtl0/view?usp=sharing)**
+- **[TensorFlow 版本参考这里](https://github.com/google-research/bert)**
 
+- **[PyTorch 版本参考这里](https://github.com/huggingface/transformers)**
 
-**使用方式：** 使用方法很简单，google发布的bert模型怎么用这个怎么用，只需要将模型下载后，更改下模型的读取路径即可.
-
-- **[tensorflow版本参考这里](https://github.com/google-research/bert)**
-
-- **[pytorch版本参考这里](https://github.com/huggingface/transformers)**
-
-**注：** 我们的pytorch模型是通过训练好的tensorflow模型转换而来，具体转换代码可以 
+**注：** 我们的 PyTorch 版本模型是通过 TensorFlow 下的模型转换而来，具体转换代码可以 
 **[参考这里](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_bert_original_tf_checkpoint_to_pytorch.py)**
 
 # 2. 模型及预训练方式
@@ -44,7 +37,7 @@ FinBERT 1.0 所采用的预训练语料主要包含三大类金融领域的语�
 ## 2.3. 预训练方式
 **预训练框架图**
 
-![image](https://github.com/houpanpan/learningit/blob/master/FinBERT_pics/wnagluojiegou.png)
+![image](https://github.com/valuesimplex/FinBERT/blob/main/pics/method.png)
 
 如上图所示，FinBERT 采用了两大类预训练任务，分别是字词级别的预训练和任务级别的预训练。两类预训练任务的细节详述如下：
 
@@ -109,7 +102,7 @@ XLA 全称为加速线性运算，如果在 Tensorflow 中开启了 XLA，那么
 
 该任务的数据集共包含 3000 条样本，其中训练集数据约 1100 条，测试集数据约 1900条，各类别分布情况如下：
 
-![image](https://github.com/houpanpan/learningit/blob/master/FinBERT_pics/classification_data.png)
+![image](https://github.com/valuesimplex/FinBERT/blob/main/pics/classification_data.png)
 
 ### 3.1.3. 实验结果
 TASK\MODEL     | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT 
@@ -126,7 +119,7 @@ TASK\MODEL     | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT
 该任务的数据集共包含 1200 条样本，其中训练集数据约 400 条，测试集数据约 800条。训练集中的各类别数目在 5~15 条之间，属于典型的小样本任务。
 各类别分布情况如下：
 
-![image](https://github.com/houpanpan/learningit/blob/master/FinBERT_pics/report_data.png)
+![image](https://github.com/valuesimplex/FinBERT/blob/main/pics/report_data.png)
 
 
 ### 3.2.3. 实验结果
@@ -145,7 +138,7 @@ TASK\MODEL      | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT
 ### 3.3.2. 数据集
 该任务的数据集共包含 2000 条样本，其中训练集数据约 1300 条，测试集数据约 700条，各类别分布情况如下：
 
-![image](https://github.com/houpanpan/learningit/blob/master/FinBERT_pics/sentiment_data.png)
+![image](https://github.com/valuesimplex/FinBERT/blob/main/pics/sentiment_data.png)
 
 ### 3.3.3. 实验结果
 
@@ -178,7 +171,7 @@ TASK\MODEL      | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT
 
 本文详细介绍了 **FinBERT** 的**开源背景、训练细节和四类对比实验结果**，欢迎其他从相关领域的团队提供更多、更丰富的对比实验和应用案例，让我们共同推进自然语言处理技术在金融领域的应用和发展。接下来，熵简 AI 团队会从**预料规模、训练时间、预训练方式**上进行更多的创新和探索，以期发展出更懂金融领域的预训练模型，并在合适时机发布 **FinBERT 2.0、FinBERT 3.0**，敬请期待。
 
-任何问题，欢迎与团队负责人联系，邮箱：liyu@entropyreduce.com
+任何问题，欢迎与我们联系：liyu@entropyreduce.com
 
 
 

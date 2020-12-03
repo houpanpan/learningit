@@ -1,6 +1,6 @@
 # 1. 背景及下载地址
 
-促进自然语言处理技术在金融科技领域的应用和发展，熵简科技 AI Lab 近期开源了基于 BERT 架构的金融领域预训练语言模型 FinBERT 1.0。据我们所知，这是国内首个在金融领域大规模语料上训练的开源中文BERT预训练模型。相对于Google发布的原生中文BERT、哈工大讯飞实验室开源的BERT-wwm 以及 RoBERTa-wwm-ext 等模型，本次开源的 **FinBERT 1.0** 预训练模型在多个金融领域的下游任务中获得了显著的性能提升，在不加任何额外调整的情况下，**F1-score** 直接提升至少 **2~5.7** 个百分点。
+为了促进自然语言处理技术在金融科技领域的应用和发展，熵简科技 AI Lab 近期开源了基于 BERT 架构的金融领域预训练语言模型 FinBERT 1.0。据我们所知，这是国内首个在金融领域大规模语料上训练的开源中文BERT预训练模型。相对于Google发布的原生中文BERT、哈工大讯飞实验室开源的BERT-wwm 以及 RoBERTa-wwm-ext 等模型，本次开源的 **FinBERT 1.0** 预训练模型在多个金融领域的下游任务中获得了显著的性能提升，在不加任何额外调整的情况下，**F1-score** 直接提升至少 **2~5.7** 个百分点。
 
 对于深度学习时代的自然语言处理技术，我们一般认为存在两大里程碑式的工作。第一个里程碑是在2013年逐渐兴起，以 Word2Vec 为代表的的词向量技术；第二个里程碑则是在 2018 年以 BERT 为代表的深度预训练语言模型（Pre-trained Language Models）。一方面，以 BERT 为代表的深度预训练模型在包括文本分类、命名实体识别、问答等几乎所有的子领域达到了新的 state of the art；另一方面，作为通用的预训练模型，BERT 的出现也显著地减轻了NLP算法工程师在具体应用中的繁重工作，由以往的魔改网络转变为 Fine tune BERT，即可快速获得性能优秀的基线模型。因此，深度预训练模型已成为各个 AI 团队必备的基础技术。
 
@@ -8,15 +8,21 @@
 
 **模型下载地址：**    
 
-- **[TensorFlow版](https://pan.baidu.com/s/16tDXNU4z9UXK-ELK72Jv3w)** （密码：714y）
+- **[tensorflow版下载（百度云密码：714y）](https://pan.baidu.com/s/16tDXNU4z9UXK-ELK72Jv3w)**
 
-- **[PyTorch版](https://pan.baidu.com/s/1jjMRvkam3efyDfY6mb5MCA)** （密码：cckk）
+- **[pytorch版下载（百度云密码：cckk）](https://pan.baidu.com/s/1jjMRvkam3efyDfY6mb5MCA)**
+
+- **[tensorflow版下载（Google Drive）](https://drive.google.com/file/d/1VGGr4z1cK3Xeczka7UWzrtbc_RCUiwET/view?usp=sharing)**
+
+- **[pytorch版下载（Google Drive）](https://drive.google.com/file/d/1hJQ2_bJWoGwOwSUDxK4dCalwkqN_qtl0/view?usp=sharing)**
+
 
 **使用方式：** 与 Google 发布的原生 BERT 使用方式一致，直接替换相应路径即可。不同深度学习框架的使用方式可参考如下项目：
 
 - **[TensorFlow 版本参考这里](https://github.com/google-research/bert)**
 
 - **[PyTorch 版本参考这里](https://github.com/huggingface/transformers)**
+
 
 **注：** 我们的 PyTorch 版本模型是通过 TensorFlow 下的模型转换而来，具体转换代码可以 
 **[参考这里](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_bert_original_tf_checkpoint_to_pytorch.py)**
@@ -189,7 +195,3 @@ TASK\MODEL      | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT
 
                 
     
-
-
-
-

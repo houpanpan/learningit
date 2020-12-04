@@ -196,7 +196,8 @@ TASK\MODEL      | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT
 该任务原始数据集共 包括6 万+条评论数据，其中正、负向评论各约 3 万条，实验随机筛选测试集1000条，
 测试集5000条，训练集和测试集正负评论分布如下：
 
-![image](https://github.com/valuesimplex/FinBERT/blob/main/pics/sentiment_data.png)
+![image](https://github.com/houpanpan/learningit/blob/master/FinBERT_pics/online_shopping_train_test_data.png)
+
 
 ### 3.6.3. 结果展示
 

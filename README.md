@@ -178,6 +178,8 @@ TASK\MODEL      | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT
 
 该任务原始数据集共包括约8000条评论数据，训练集1000条数据，测试集约7000条数据，训练集和测试集正负评论分布如下：
 
+![image](https://github.com/houpanpan/learningit/blob/master/FinBERT_pics/hotel_comment_train_test.png)
+
 ### 3.5.3. 结果展示
 
 TASK\MODEL      | BERT | BERT-wwm | RoBERTa-wwm-ext | FinBERT 
